@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GooglePlayServicesGameSample</string>
+    <string name="app_id">PLACE_YOUR_APP_ID_HERE</string>
+    <string name="achievement_bronze">PLACE_YOUR_ACHIEVEMENT_ID1_HERE</string>
+    <string name="achievement_silver">PLACE_YOUR_ACHIEVEMENT_ID2_HERE</string>
+    <string name="achievement_gold">PLACE_YOUR_ACHIEVEMENT_ID3_HERE</string>
+    <string name="leaderboard_score">PLACE_YOUR_LEADERBOARD_ID_HERE</string>
+
+</resources>

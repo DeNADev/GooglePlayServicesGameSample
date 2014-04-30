@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#CCCCCC"
+    tools:context=".MainActivity" >
+
+    <!-- sign-in button -->
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_toLeftOf="@+id/isConnected"
+        android:text="disconnect" />
+
+    <Button
+        android:id="@+id/isConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:text="isConnectd" />
+
+    <Button
+        android:id="@+id/isConnecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_toRightOf="@+id/isConnected"
+        android:text="isConnecting" />
+
+    <Button
+        android:id="@+id/openAchievementUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disconnect"
+        android:layout_centerHorizontal="true"
+        android:text="openAchievementUI" />
+
+    <Button
+        android:id="@+id/unlockAchievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/openAchievementUI"
+        android:layout_below="@+id/openAchievementUI"
+        android:text="unlockAchievement" />
+
+    <Button
+        android:id="@+id/incrementAchievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unlockAchievement"
+        android:layout_centerHorizontal="true"
+        android:text="incrementAchievement" />
+
+    <Button
+        android:id="@+id/openAllLeaderboardsUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incrementAchievement"
+        android:layout_centerHorizontal="true"
+        android:text="openAllLeaderboardsUI" />
+
+    <Button
+        android:id="@+id/openLeaderboardUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openAllLeaderboardsUI"
+        android:layout_centerHorizontal="true"
+        android:text="openLeaderboardUI" />
+
+    <Button
+        android:id="@+id/submitScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openLeaderboardUI"
+        android:layout_centerHorizontal="true"
+        android:text="submitScore" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_play_games_badge_gray"
+        android:layout_centerHorizontal="true" >
+    </com.google.android.gms.common.SignInButton>
+
+    <ImageView
+        android:id="@+id/ic_play_games_badge_white"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ic_play_games_badge_gray"
+        android:src="@drawable/games_controller_white" />
+    
+    <ImageView
+        android:id="@+id/ic_play_games_badge_gray"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/games_controller_grey" />
+
+    <ImageView
+        android:id="@+id/ic_play_games_badge_green"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ic_play_games_badge_gray"
+        android:src="@drawable/games_controller" />
+
+</RelativeLayout>
